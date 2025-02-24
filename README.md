@@ -54,7 +54,7 @@ Design an application step by step
      ![image](https://github.com/user-attachments/assets/a47b07f0-2d3a-4b25-a4a9-cdb46a109179)
      ![image](https://github.com/user-attachments/assets/78266ca7-0365-41a3-94a5-5fb438694c30)
 
-    -how to fix it?
+      how to fix it?
 -  各種修bug
     - 換行符號設定 : 在Window下開發是CRLF 在Linux則是LF
     - Eslite是用來檢查程式語法的tool Prettier則是自動整理程式碼的tool
