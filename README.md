@@ -24,4 +24,6 @@ Design an application step by step
     -在terminal中輸入`git init` initialize
     -這時visual studio code會跳出warnings 提示目前repository有大量未提交的變更 這些變更通常來自於node.js內建的模組 `node_modules` 我們不需要commit它們到github上
      所以下載擴充軟體 `gitignore` 將這些模組加入gitignore 以避免git花不必要地時間去追蹤這些檔案
-    -點左下角 `manage`->`Command Palettes`->`gitignore`->我們目前用什麼語言開發 就把該語言相關模組都加入gitignore中  
+    -點左下角 `manage`->`Command Palettes`->`gitignore`->我們目前用什麼語言開發 就把該語言相關模組都加入gitignore中
+    -此時refresh 會發現目前要被追蹤的file減少到可接受大小 ![image](https://github.com/user-attachments/assets/ee645b52-9d7f-4a8e-b6f5-e4b0401d7ef6)
+  
