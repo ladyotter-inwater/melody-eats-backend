@@ -47,6 +47,15 @@ Design an application step by step
       6. 變更github repository的URL `git remote set-url origin git@github.com:ladyotter-inwater/melody-eats-backend.git`
       7. and it's ok you can push your project onto github
       8. `git push -u origin master` 預設是main 但我都放在master
-- 各種修bug
-   - 在 VS Code 右下角檢查當前的換行符類型（CRLF 或 LF）。如果設置為 CRLF，可以試著切換為 LF（或反之）並保存文件 -> 警告就消失了
+-  API reference ApolloServer
+    - 網址 : https://www.apollographql.com/docs/apollo-server/api/apollo-server
+    - `option`有兩個參數是一定要設定 `typedefs` & `resolvers`
+-  跳出Error `GraphQLError: Query root type must be provided.` ![image](https://github.com/user-attachments/assets/a47b07f0-2d3a-4b25-a4a9-cdb46a109179)
+how to fix it?
+    -![image](https://github.com/user-attachments/assets/78266ca7-0365-41a3-94a5-5fb438694c30)
+    -
+-  各種修bug
+    - 換行符號設定 : 在Window下開發是CRLF 在Linux則是LF
+    - Eslite是用來檢查程式語法的tool Prettier則是自動整理程式碼的tool
+    - 使用快捷鍵格式化format程式碼 `ctrl+alt+f`
 
