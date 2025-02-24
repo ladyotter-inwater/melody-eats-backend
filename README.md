@@ -29,7 +29,16 @@ Design an application step by step
   
   ![image](https://github.com/user-attachments/assets/ee645b52-9d7f-4a8e-b6f5-e4b0401d7ef6)
 - 修改原本預設的 `ReadMe.md` 這個文件 然後commit到github上 `git add .`->`git commit`
-    - 將本地 Git倉庫連接到GitHub上創建的遠端倉庫。how to do? first, copy在GitHub上創建的倉庫URL（如 https://github.com/你的用戶名/倉庫名.git）輸入`git remote add origin `
+    - 將本地 Git倉庫連接到GitHub上創建的遠端倉庫。how to do? first, copy在GitHub上創建的倉庫URL（如 https://github.com/ladyotter-inwater(github用戶名)/melody-eats-bacxkend(倉庫名).git）輸入`git remote add origin `
     - 此時`origin`就會指向遠端的倉庫(即成功連接上github) 此時 就可以將文件`push`上去
     - 使用 `git remote remove origin` 來移除遠端倉庫 `origin`
     - 使用 `git remote -v` 再次確認 `origin` 是否已經移除 刪除成功就會空 不顯示任何東西
+-`push` code to the github
+    -連接到remote repository時 會顯示**要授權** 此時可以設定SSH(這樣就不用每次都要輸入PAT)
+      1 生成SSH private key `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+        `-t rsa` 表示使用RSA演算法生成密鑰
+        `-b 4096` 指定密鑰長度為4096位
+        `-C "your_email@example.com"` 為密鑰添加註解 通常是標記綁定github的那個email
+      2 設定private key儲存的route 因為預設是在C:\Users\黃馨... 但因為路徑中有中文 所以等夏會報錯 故要自訂儲存路徑 我是存在 `C:/Users/melody/.ssh` 下 `.ssh`這個資料夾要自己創建
+      3 查看public key ->這是要add到github的 輸入`cat C:/Users/melody/.ssh/id_rsa.pub`時 terminal就會顯示public key的內容 它會以`ssh-rsa`開頭 copy & paste to this place
+      4
