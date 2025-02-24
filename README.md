@@ -41,5 +41,9 @@ Design an application step by step
         `-C "your_email@example.com"` 為密鑰添加註解 通常是標記綁定github的那個email
       2 設定private key儲存的route 因為預設是在C:\Users\黃馨... 但因為路徑中有中文 所以等夏會報錯 故要自訂儲存路徑 我是存在 `C:/Users/melody/.ssh` 下 `.ssh`這個資料夾要自己創建
       3 查看public key ->這是要add到github的 輸入`cat C:/Users/melody/.ssh/id_rsa.pub`時 terminal就會顯示public key的內容 它會以`ssh-rsa`開頭 copy & paste to this place
-      4 `settings`->![image](https://github.com/user-attachments/assets/bba375bf-f3d4-4ea7-989e-fd54c4175079)
+      4 `settings`->`SSH and GPG keys`->`new SSH key`
+      5 測試SSH連線有沒有成功 `ssh -T git@github.com` 如果設置完成 會顯示Hi <your-username>! You've successfully authenticated, but GitHub does not provide shell access.
+      6 變更github repository的URL `git remote set-url origin git@github.com:ladyotter-inwater/melody-eats-backend.git`
+      7 and it's ok you can push your project onto github
+      8 `git push -u origin master` 預設是main 但我都放在master
 
