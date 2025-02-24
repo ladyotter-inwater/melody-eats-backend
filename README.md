@@ -28,4 +28,4 @@ Design an application step by step
     -此時refresh 會發現目前要被追蹤的file減少到可接受大小
   
   ![image](https://github.com/user-attachments/assets/ee645b52-9d7f-4a8e-b6f5-e4b0401d7ef6)
-  
+    -修改原本預設的 `ReadMe.md` 這個文件 然後commit到github上 `git add .`->`git commit`
