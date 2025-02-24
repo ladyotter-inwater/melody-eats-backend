@@ -16,3 +16,8 @@ Design an application step by step
     -在執行 `npm install`時 可能會拋出error 這是因為PowerShell在預設情況下，會阻止未經授權的script執行，這樣才可以保護系統免於執行潛在的危險程式。
     -所以可以以選 以**系統管理員開啟powershell** 然後**設定允許未經認證之script執行** `Set-ExecutionPolicy Remotesigned-Scope CurrentUser`(Scope範圍) 
     -等到裝好後 執行`npm run start:dev`(在開發環境中啟動應用程式)
+- create a repository in github to record the new process (只專注於我們想要的開發的項目)
+    -在terminal中輸入`git init` initialize
+    -這時visual studio code會跳出warnings 提示目前repository有大量未提交的變更 這些變更通常來自於node.js內建的模組 `node_modules` 我們不需要commit它們到github上
+     所以下載擴充軟體 `gitignore` 將這些模組加入gitignore 以避免git花不必要地時間去追蹤這些檔案
+    -點左下角 `manage`->`Command Palettes`->`gitignore`->我們目前用什麼語言開發 就把該語言相關模組都加入gitignore中  
