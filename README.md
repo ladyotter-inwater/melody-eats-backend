@@ -35,15 +35,15 @@ Design an application step by step
     - 使用 `git remote -v` 再次確認 `origin` 是否已經移除 刪除成功就會空 不顯示任何東西
 -`push` code to the github
     -連接到remote repository時 會顯示**要授權** 此時可以設定SSH(這樣就不用每次都要輸入PAT)
-      1 生成SSH private key `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+      1. 生成SSH private key `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
         `-t rsa` 表示使用RSA演算法生成密鑰
         `-b 4096` 指定密鑰長度為4096位
         `-C "your_email@example.com"` 為密鑰添加註解 通常是標記綁定github的那個email
-      2 設定private key儲存的route 因為預設是在C:\Users\黃馨... 但因為路徑中有中文 所以等夏會報錯 故要自訂儲存路徑 我是存在 `C:/Users/melody/.ssh` 下 `.ssh`這個資料夾要自己創建
-      3 查看public key ->這是要add到github的 輸入`cat C:/Users/melody/.ssh/id_rsa.pub`時 terminal就會顯示public key的內容 它會以`ssh-rsa`開頭 copy & paste to this place
-      4 `settings`->`SSH and GPG keys`->`new SSH key`
-      5 測試SSH連線有沒有成功 `ssh -T git@github.com` 如果設置完成 會顯示Hi <your-username>! You've successfully authenticated, but GitHub does not provide shell access.
-      6 變更github repository的URL `git remote set-url origin git@github.com:ladyotter-inwater/melody-eats-backend.git`
-      7 and it's ok you can push your project onto github
-      8 `git push -u origin master` 預設是main 但我都放在master
+      2. 設定private key儲存的route 因為預設是在C:\Users\黃馨... 但因為路徑中有中文 所以等夏會報錯 故要自訂儲存路徑 我是存在 `C:/Users/melody/.ssh` 下 `.ssh`這個資料夾要自己創建
+      3. 查看public key ->這是要add到github的 輸入`cat C:/Users/melody/.ssh/id_rsa.pub`時 terminal就會顯示public key的內容 它會以`ssh-rsa`開頭 copy & paste to this place
+      4. `settings`->`SSH and GPG keys`->`new SSH key`
+      5. 測試SSH連線有沒有成功 `ssh -T git@github.com` 如果設置完成 會顯示Hi <your-username>! You've successfully authenticated, but GitHub does not provide shell access.
+      6. 變更github repository的URL `git remote set-url origin git@github.com:ladyotter-inwater/melody-eats-backend.git`
+      7. and it's ok you can push your project onto github
+      8. `git push -u origin master` 預設是main 但我都放在master
 
