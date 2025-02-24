@@ -28,7 +28,7 @@ Design an application step by step
     -此時refresh 會發現目前要被追蹤的file減少到可接受大小
   
   ![image](https://github.com/user-attachments/assets/ee645b52-9d7f-4a8e-b6f5-e4b0401d7ef6)
-
+-
     -修改原本預設的 `ReadMe.md` 這個文件 然後commit到github上 `git add .`->`git commit`
     -將本地 Git倉庫連接到GitHub上創建的遠端倉庫。how to do? first, copy在GitHub上創建的倉庫URL（如 https://github.com/你的用戶名/倉庫名.git）輸入`git remote add origin `
     -此時`origin`就會指向遠端的倉庫(即成功連接上github) 此時 就可以將文件`push`上去
