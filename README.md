@@ -51,9 +51,7 @@ Design an application step by step
     - 網址 : https://www.apollographql.com/docs/apollo-server/api/apollo-server
     - `option`有兩個參數是一定要設定 `typedefs` & `resolvers`
 -  跳出Error `GraphQLError: Query root type must be provided.`
-     ![image](https://github.com/user-attachments/assets/a47b07f0-2d3a-4b25-a4a9-cdb46a109179)
-
-     [image](https://github.com/user-attachments/assets/78266ca7-0365-41a3-94a5-5fb438694c30)
+     ![image](https://github.com/user-attachments/assets/a47b07f0-2d3a-4b25-a4a9-cdb46a109179) [image](https://github.com/user-attachments/assets/78266ca7-0365-41a3-94a5-5fb438694c30)
     -how to fix it?
 -  各種修bug
     - 換行符號設定 : 在Window下開發是CRLF 在Linux則是LF
