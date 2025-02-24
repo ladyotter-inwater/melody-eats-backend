@@ -46,4 +46,8 @@ Design an application step by step
       6. 變更github repository的URL `git remote set-url origin git@github.com:ladyotter-inwater/melody-eats-backend.git`
       7. and it's ok you can push your project onto github
       8. `git push -u origin master` 預設是main 但我都放在master
+      9. 1. 第一項
+2. 第二項
+3. 第三項
+
 
