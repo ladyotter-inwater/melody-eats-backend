@@ -55,6 +55,8 @@ Design an application step by step
      ![image](https://github.com/user-attachments/assets/78266ca7-0365-41a3-94a5-5fb438694c30)
       上述error表示Graphql is looking for queries & resolvers to generate our schema(圖示) but it didn't find it
       how to fix it?
+-  先製作一個mini module測試 ![image](https://github.com/user-attachments/assets/6be70620-6bc1-4ef4-bf32-db0383e33b31)
+
 -  各種修bug
     - 換行符號設定 : 在Window下開發是CRLF 在Linux則是LF
     - Eslite是用來檢查程式語法的tool Prettier則是自動整理程式碼的tool
