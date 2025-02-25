@@ -59,6 +59,7 @@ Design an application step by step
     - 換行符號設定 : 在Window下開發是CRLF 在Linux則是LF
     - Eslite是用來檢查程式語法的tool Prettier則是自動整理程式碼的tool
     - 執行此命令可自動修復 ![image](https://github.com/user-attachments/assets/fb41082c-28ca-46b3-a610-7cd54ecb2b25)
-`npm run lint --fix`
+
+        `npm run lint --fix`
     - 使用快捷鍵格式化format程式碼 `shift+alt+f`
 
